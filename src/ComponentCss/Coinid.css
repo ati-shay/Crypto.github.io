@@ -1,0 +1,28 @@
+
+.mainContainer{
+    display: flex;
+    flex-direction:column;
+    padding: 6px;
+}
+
+.coinContainer{
+      display: flex;
+      border: 1px solid white;
+      justify-content: space-around;
+      align-items: center;
+      width: 60vw;
+      margin: auto;
+      background-color: #212529;
+      padding: 5px;
+      border-radius: 15px;
+      color: white;
+}
+.graphcontainer{
+    display:flex;
+    width:80vw;
+    flex-direction:column;
+    margin: auto;
+    justify-content:space-between;
+    align-items:center;
+}
+

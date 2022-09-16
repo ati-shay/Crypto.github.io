@@ -1,0 +1,18 @@
+.CoinDetails{
+  display: flex;
+  flex-direction: column;
+  /* background-color: red; */
+  align-items: flex-start;
+}
+.homeStyle{
+  background-color: rgb(219, 224, 226);
+}
+
+.cardHover{
+  cursor: pointer;
+}
+
+.cardHover:hover{
+  /* background-color: rgb(199, 225, 236); */
+  border: 0.1px solid rgb(66, 64, 64);
+}

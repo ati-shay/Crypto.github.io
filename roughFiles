@@ -1,0 +1,58 @@
+<div
+className="container-fluid p-3"
+style={{
+  minHeight: "84.2vh",
+}}
+>
+<h2 className="textCenter ">All Crypto News</h2>
+<div className="row text-center">
+  {news.map((coin, ind) => {
+    return (
+      <div className="col-10 col-md-4 mt-4 " key={ind}>
+        <a rel="noreferrer" style={{
+          color:"black",
+          textDecoration:"none",
+        }} target="_blank" href={coin?.url}>
+        <div className="card p-2 cardHover" style={homeStyle}>
+          <div className="card">
+            <img
+              src={coin.urlToImage}
+              className="card-img-top"
+              alt="..."
+            />
+            <div className="card-body">
+              <h5 className="card-title">{coin.title}</h5>
+              <p className="card-text">
+                {coin.description}..
+               <a rel="noreferrer" target="_blank" href={coin?.url}>Read more</a>
+              </p>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  // justifyContent: "flex-start",
+                  alignItems:"flex-start",
+                }}
+              >
+                <p>
+                  Author:{" "}
+                  <span>
+                    {coin.author === null ? "Me" : coin.author}
+                  </span>
+                </p>
+                <p>
+                  Published At: <span>{coin.publishedAt}</span>
+                </p>
+                <p>
+                  By : <span>{coin.source.name}</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </a>
+      </div>
+    );
+  })}
+</div>
+</div>
